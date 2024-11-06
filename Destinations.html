@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Nadu Districts</title>
+  <style>
+    /* Reset margins and padding */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Layout styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Introduction and main title */
+    .intro {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      flex: 1 1 20%;
+      padding: 15px;
+      background-color: #e0e0e0;
+      display: none;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #333;
+      margin: 5px 0;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    /* Content section */
+    .content {
+      flex: 1 1 60%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* District section styling */
+    .district-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .district-card {
+      flex: 1 1 calc(33.333% - 20px);
+      padding: 15px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      text-align: center;
+      display: none; /* Hidden by default for filtering */
+    }
+
+    .district-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 768px) {
+      .sidebar {
+        display: block;
+      }
+
+      .district-card {
+        display: block;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .district-card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .district-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <h1>Explore the Districts of Tamil Nadu</h1>
+    <p>Welcome to an in-depth exploration of Tamil Nadu's districts. Each district holds its own unique history, culture, and attractions. Use the sidebar for quick access to different districts, or explore each one in the main section below.</p>
+  </section>
+
+  <!-- Sidebar for district links -->
+  <aside class="sidebar">
+    <h2>Quick Links</h2>
+    <a href="#chennai">Chennai</a>
+    <a href="#coimbatore">Coimbatore</a>
+    <a href="#madurai">Madurai</a>
+    <a href="#trichy">Trichy</a>
+    <a href="#salem">Salem</a>
+    <a href="#erode">Erode</a>
+    <a href="#tirunelveli">Tirunelveli</a>
+    <a href="#tuticorin">Tuticorin</a>
+    <a href="#vellore">Vellore</a>
+    <a href="#thanjavur">Thanjavur</a>
+    <a href="#kanchipuram">Kanchipuram</a>
+    <a href="#tiruvarur">Tiruvarur</a>
+    <a href="#dharmapuri">Dharmapuri</a>
+    <a href="#karur">Karur</a>
+    <a href="#ramanathapuram">Ramanathapuram</a>
+    <a href="#namakkal">Namakkal</a>
+    <a href="#nagapattinam">Nagapattinam</a>
+    <a href="#thiruvannamalai">Thiruvannamalai</a>
+    <a href="#dindigul">Dindigul</a>
+    <a href="#kanyakumari">Kanyakumari</a>
+  </aside>
+
+  <!-- Main Content Section -->
+  <section class="content">
+    <div class="district-section">
+      <!-- Districts with placeholder content -->
+      <div id="chennai" class="district-card">
+        <h2>Chennai</h2>
+        <figure>
+          <img src="" alt="Chennai">
+          <figcaption>The bustling capital of Tamil Nadu</figcaption>
+        </figure>
+        <audio controls>
+          <source src="./Audio/achennai.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="./video/chennai.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+     
+
+      <div id="coimbatore" class="district-card">
+        <h2>Coimbatore</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="./video/cbe.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="madurai" class="district-card">
+        <h2>Madurai</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="salem" class="district-card">
+        <h2>Selam</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="erode" class="district-card">
+        <h2>erode</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="tirunelveli" class="district-card">
+        <h2>tirunelveli</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="tuticorin" class="district-card">
+        <h2>tuticorin</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="vellore" class="district-card">
+        <h2>vellore</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="thanjavur" class="district-card">
+        <h2>thanjavur</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div id="kanchipuram" class="district-card">
+        <h2>Coimbatore</h2>
+        <figure>
+          <img src="images/coimbatore.jpg" alt="Coimbatore">
+          <figcaption>The industrial city with a rich cultural heritage</figcaption>
+        </figure>
+        <audio controls>
+          <source src="audio/coimbatore.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <video controls>
+          <source src="videos/coimbatore.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Continue adding district-card sections for each of the 20 districts -->
+
+    </div>
+  </section>
+
+  <script>
+    function filterDistricts() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toUpperCase();
+      const districtSection = document.querySelector('.district-section');
+      const cards = districtSection.getElementsByClassName('district-card');
+      
+      for (let i = 0; i < cards.length; i++) {
+        const title = cards[i].getElementsByTagName('h2')[0];
+        const txtValue = title.textContent || title.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          cards[i].style.display = "block";
+        } else {
+          cards[i].style.display = "none";
+        }
+      }
+    }
+
+    // Show all districts initially
+    document.addEventListener("DOMContentLoaded", function() {
+      filterDistricts();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided City Tours - Tamil Nadu Travel Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background-color: #537895;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        /* Slider styles */
+        /* Slider styles */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides img {
+    width: 100%;
+    max-height: 300px; /* Set your desired maximum height here */
+    display: none;
+}
+
+.slides img.active {
+    display: block;
+}
+
+        /* Tour section styles */
+        .tour-section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tour-section h2 {
+            color: #537895;
+            margin-bottom: 10px;
+        }
+
+        .tour-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .tour-details {
+            overflow: hidden;
+        }
+
+        .tour-details p {
+            font-size: 1em;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .btn-book {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #537895;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-book:hover {
+            background-color: #3a5d6b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Slider Section -->
+    <div class="slider">
+        <div class="slides">
+            <img src="./images/home_img/img1.jpg" alt="Chennai City Tour" class="active">
+            <img src="./images/home_img/img2.jpg" alt="Madurai City Tour">
+            <img src="./images/tours/ooty_tour.jpg" alt="Ooty Hill Station Tour">
+            <img src="./images/tours/kanyakumari_tour.jpg" alt="Kanyakumari City Tour">
+            <img src="./images/tours/rameswaram_tour.jpg" alt="Rameswaram City Tour">
+        </div>
+    </div>
+
+    <header>
+        <h1>Guided City Tours</h1>
+        <p>Explore the best cities in Tamil Nadu with our expert guides</p>
+    </header>
+
+    <!-- City Tour Sections -->
+    <section class="tour-section">
+        <img src="./images/home_img/img2.jpg" alt="Chennai City Tour">
+        <div class="tour-details">
+            <h2>Chennai City Tour</h2>
+            <p>Discover the vibrant city of Chennai, known for its rich history, bustling streets, and beautiful beaches. 
+            This tour covers Marina Beach, Fort St. George, Kapaleeshwarar Temple, and the famous Chennai Museum. 
+            Experience the cultural and historical essence of Chennai with our expert guides.</p>
+            <a href="book-tour.html" class="btn-book">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Additional tours here -->
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Tamil Nadu Travel Team. All rights reserved.</p>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slides img');
+
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+            if (index === slideIndex) {
+                slide.classList.add('active');
+            }
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+    }
+
+    setInterval(showSlides, 3000); // Change slide every 3 seconds
+</script>
+
+</body>
+</html>

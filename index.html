@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilnadu Travel Team</title>
+    
+    <!-- Embedded Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background: linear-gradient(to top, #bcbfc0 0%, #537895 100%);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-sidebar, .sidebar, .main-content {
+    padding: 20px;
+}
+
+.left-sidebar {
+    flex: 1;
+    background-color:lightgray;
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 100px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+    margin-top: 100px;
+    background-color:lightgray;
+    border-radius: 20px;
+    height: 80%;
+}
+
+.content-section {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.content-section img {
+    float: left;
+    margin: 0 15px 10px 0;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sidebar ul, .left-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li, .left-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a, .left-sidebar ul li a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover, .left-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.team-section, .destination-section, .client-experience-section, .client-rating-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    color: #333;
+}
+
+.section-image, .destination-image {
+    float: left;
+    width: 300px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.destination-image {
+    width: 200px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Tamilnadu Travel Team</h1>
+    <p>Your Guide to Exploring the Beauty of Tamil Nadu</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <aside class="left-sidebar">
+        <h3>Our Services</h3><br>
+        <ul>
+            <a href="Destinations.html" style="text-decoration: none;"><li><img src="./images/left_side_img/package.avif" alt="Tour" style="width: 40px; vertical-align: middle; margin-right: 8px;"> Personalized Tour Packages</li></a><br>
+            <a href="hotel_room.html"style="text-decoration: none;"><li><img src="./images/left_side_img/hotel.jpg" alt="Hotel" style="width: 40px; vertical-align: middle; margin-right: 8px;"> Hotel Booking Assistance</li></a><br>
+            <a href="Guided City Tours.html"style="text-decoration: none;"><li><img src="./images/left_side_img/Guide.jpg" alt="Guide" style="width: 40px; vertical-align: middle; margin-right: 8px;"> Guided City Tours</li></a><br>
+            <a href="Transportation Services.html"style="text-decoration: none;"><li><img src="./images/left_side_img/Transport.jpg" alt="Transport" style="width: 40px; vertical-align: middle; margin-right: 8px;"> Transportation Services</li></a><br>
+        </ul>
+    </aside>
+    
+    <div class="main-content">
+        <section class="content-section clearfix">
+            <h2>Welcome to Tamilnadu Travel Team</h2>
+            <p>
+                <img src="images/home_img/main.jpg" alt="Tamilnadu scenery" width="100%">
+                Discover the beautiful landscapes, historic temples, and rich culture of Tamil Nadu with us. We offer
+                customized travel packages that suit every type of traveler, ensuring a memorable and enjoyable
+                experience.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h3>Why Choose Us?</h3>
+            <p>
+                At Tamilnadu Travel Team, we prioritize customer satisfaction and deliver the best travel experiences.
+                Whether you're exploring ancient temples or enjoying scenic beach views, we have you covered.
+            </p>
+        </section>        
+    </div>
+
+    <aside class="sidebar">
+        <h3>Tamil Nadu travelers</h3><br>
+        <ul>
+            <li><a href="#our-team-work">Our Team Work</a></li><br>
+            <li><a href="#our-destinations">Our Destinations</a></li><br>
+            <li><a href="#our-client-experience">Our Client Experience</a></li><br>
+            <li><a href="#client-rating">Client Rating</a></li><br>
+        </ul>
+    </aside>
+</div>
+
+<main>
+    <section id="our-team-work" class="team-section clearfix">
+        <h3>Our Team Work</h3><br>
+        <img src="./images/team_work_img/team_work.avif" alt="Our Team" class="section-image">
+        <pre style="font-family: Arial, Helvetica, sans-serif; font-size: medium; margin-top: 40px;">
+            At Tamilnadu Travel Team, we believe in teamwork as the foundation of our success. 
+            Each member of our team plays a crucial role in delivering exceptional travel experiences, 
+            From customer service representatives who help design your perfect trip to our expert 
+            Tour guides who bring local knowledge to every destination. 
+
+            Our team collaborates to ensure each journey is seamless, safe, and memorable, focusing 
+            On delivering personalized attention and care to meet each traveler’s unique preferences and needs.
+        </pre>
+    </section>
+
+    <section id="our-destinations" class="destination-section clearfix">
+        <h3>Our Destinations</h3><br>
+        <div>
+            <h4>Chennai</h4>
+            <img src="./images/Our_Destinations/chennai.avif" alt="Chennai" class="destination-image">
+            <p>Explore the vibrant capital with its famous Marina Beach, historic Fort St. George, and bustling local markets.</p>
+        </div>
+        <div>
+            <h4>Madurai</h4>
+            <img src="./images/Our_Destinations/madurai.avif" alt="Madurai" class="destination-image">
+            <p>Discover the city’s rich history and the magnificent Meenakshi Amman Temple.</p>
+        </div>
+        <div>
+            <h4>Ooty</h4>
+            <img src="./images/Our_Destinations/ooty.avif" alt="Ooty" class="destination-image">
+            <p>Escape to the cool hill station with lush greenery, scenic mountain views, and charming tea plantations.</p>
+        </div>
+        <div>
+            <h4>Kanyakumari</h4>
+            <img src="./images/Our_Destinations/kanyakumari.jpg" alt="Kanyakumari" class="destination-image">
+            <p>Visit the southern tip of India, where the Bay of Bengal, Arabian Sea, and Indian Ocean meet.</p>
+        </div>
+        <div>
+            <h4>Rameswaram</h4>
+            <img src="./images/Our_Destinations/rarneswaram.avif" alt="Rameswaram" class="destination-image">
+            <p>A spiritual hub known for its beautiful temples and clear blue waters, ideal for a mix of spiritual and leisurely exploration.</p>
+        </div>
+    </section>
+
+    <section id="our-client-experience" class="client-experience-section clearfix">
+        <h3>Our Client Experience</h3><br>
+        <img src="./images/Experience/Our Client Experience.avif" alt="Happy clients" class="section-image">
+        <pre style="font-family: Arial, Helvetica, sans-serif; font-size: medium; margin-top: 40px;">
+            We take great pride in providing a smooth and enjoyable travel experience for our clients. 
+            With us, travelers receive personalized itineraries that match their interests and preferences, 
+            Whether they’re looking for adventure, relaxation, or cultural immersion. Every aspect of our service, 
+            From booking to the final journey, is crafted to enhance client satisfaction and ensure a pleasant
+            Journey through Tamil Nadu.
+        </pre>
+
+        <p>Hear from our clients about their memorable journeys with Tamilnadu Travel Team!</p>
+        <blockquote>
+            <p>"The team at Tamilnadu Travel made our trip unforgettable. The attention to detail and 
+            personalized service were exceptional!" - Priya</p>
+        </blockquote>
+    </section>
+
+    </section>
+
+    <section id="client-rating" class="client-rating-section clearfix">
+        <h3>Client Rating</h3><br>
+        <img src="./images/Client Rating/Client Rating.avif" alt="Client Ratings" class="section-image">
+        <pre style="font-family: Arial, Helvetica, sans-serif; font-size: medium; margin-top: 40px;">
+            Our clients consistently rate us highly for our dedication, professionalism, and attention to detail.
+            These ratings reflect our commitment to providing memorable travel experiences and highlight 
+            Our efforts to exceed expectations. We value the trust our clients place in us and strive to continuously 
+            Improve our services.
+        </pre>
+        
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Tamilnadu Travel Team. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
